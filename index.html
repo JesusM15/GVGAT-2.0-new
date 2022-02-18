@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/icono.png">
+	<link rel="stylesheet" type="text/css" href="estilos/style.css">
+	<meta charset="utf-8">
+	<title>GVGAT</title>
+	<link rel="canonical" href="#" />
+	<meta name="keywords" content="paginas, web, proyectos, videojuegos, games, minecraft, fortnite, juegos, pc, computadora, telefonos, osu, valorant">
+	<meta name="description" content="Conoce todo acerca de videojuegos incluyendo sus requerimientos minimos y recomendados...">
+	<meta name="author" content="Jesus M">
+	<meta name="robots" content="index">
+	<meta name="viewport" content="width=viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
+    <script src="https://kit.fontawesome.com/62ea397d3a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<header>
+		<nav class="nav">
+			<ul class="nav-ul">
+				<div class="nav-li-container">
+					<li class="nav-li">
+						<a href="index.html" class="nav-link">
+						<i class="fas fa-gamepad nav-icon"></i>
+						GVGAT  
+					    </a>
+				    </li>
+					<li class="nav-li">
+						<a href="paginas/juegos.html" class="nav-link">
+                        <i class="fas fa-heart nav-icon"></i>
+						Juegos
+					    </a>
+				    </li>
+				    <li class="nav-li">
+					    <a href="paginas/test.html" class="nav-link">
+                            <i class="fas fa-book nav-icon"></i>
+					        Test
+					    </a>
+				    </li>
+				    <li class="nav-li">
+				    	<button class="btn-music">
+				    		<i class="fas fa-play"></i>
+				    	</button>
+				    </li>
+				    	<script type="text/javascript">
+				    		const btnMusic = document.querySelector(".btn-music");
+
+				    		let playing = false;
+				    		var sonido = new Audio();
+
+				    		btnMusic.addEventListener("click", (er)=>{
+                                musicFunction();
+                            });
+
+                            const musicFunction = () =>{
+                            	if (playing == false){
+				    		        sonido.src = "bgtheme.mp3";
+				    		        sonido.loop = true;
+				    		        sonido.play();
+				    		        playing = true;
+                            	}else{
+                            		sonido.src = "";
+                                    playing = false;
+                            	}
+                            }
+				    	</script>
+				</div>
+			</ul>
+			<ul class="nav-ul-responsive">
+			<div class="nav-button-responsive-container">
+				<button class="nav-responsive-button" id="menu">
+
+				 <i class="fas fa-bars"></i></button>
+			</div>
+			<div class="nav-li-responsive-container">
+				<li class="nav-li-responsive">
+					<a href="index.html" class="nav-link">
+                    <i class="fas fa-gamepad nav-icon"></i>
+					GVGAT
+					</a>
+				</li>
+				<li class="nav-li-responsive">
+					<a href="paginas/juegos.html" class="nav-link">
+                    <i class="fas fa-heart nav-icon"></i>
+					Juegos
+					</a>
+				</li>
+				<li class="nav-li-responsive">
+					<a href="paginas/test.html" class="nav-link">
+                    <i class="fas fa-book nav-icon"></i>
+					Test
+					</a>
+				</li>
+				<li class="nav-li-responsive">
+				    <button class="btn-music">
+				    	<i class="fas fa-play"></i>
+				    </button>
+				</li>
+			</div>			
+ 			</ul>
+		</nav>
+	</header>
+	<div class="banner-container">
+		<div class="filter">
+			<h1 class="title">
+			    Aqui en GVGAT descubre todo sobre videojuegos
+			    (Requerimientos, jugabilidad, rankings, indies)
+	        </h1>
+		</div>
+	</div>
+	<div class="container animation">
+		<h2 class="subtitle">Juegos con más jugadores concurrentes 2021</h2>
+		<div class="game-list">
+			<div class="game-players-live">
+				<div class="flex-position animation">
+					<div class="flex-item img">
+						<img src="img/minecraft.png" class="img-top">
+					</div>
+					<div class="flex-item text-flex">
+						<a class="subtitle" href="https://www.minecraft.net/es-es" target="NO_BLANK">4. Minecraft</a>
+						<p class="text-p">
+							Muchos ya conoceran este popular videojuego conocido como Minecraft que pese a tener desde el 2009 disponible sigue teniendo esa gran relevancia que se ha ganado, aunque los datos de sus jugadores concurrentes son algo "Imprecisos" debido a que no se tienen datos de la actualidad pero sus numeros rondan entre 1.4 millones o más jugadores concurrentes, lo cual no deja a nadie indiferente.
+						</p>
+					</div>
+				</div>
+<!-- 				termina minecraft-->
+      			<br><br>
+				<div class="flex-position animation">
+					<div class="flex-item text-flex">
+						<a class="subtitle" href="https://es.crossfire.z8games.com/" target="NO_BLANK">3. Crossfire</a>
+						<p class="text-p">
+                            Es probable que hasta hace muy poco la mayoría de personas no hubieran oído hablar de uno de los videojuegos más jugados del mundo. Crossfire, un clon de Counter-Strike, es una bestia absoluta en Corea, y pronto dejará su huella en Occidente.
+                            Alcanzando la cifra de 8 millones de jugadores concurrentes. Esta es una estadística que debemos tener en cuenta y que se ha promocionado durante varios años, por lo que en realidad no está claro el tamaño actual de la comunidad de jugadores.
+						</p>
+					</div>
+					<div class="flex-item img">
+						<img src="img/crossfire.png" class="img-top">
+					</div>
+				</div>
+				<br><br><br>
+				<div class="flex-position animation">
+					<div class="flex-item img">
+						<img src="img/lol.png" class="img-top">
+					</div>
+					<div class="flex-item text-flex">
+						<a class="subtitle" href="https://signup.lan.leagueoflegends.com/es/signup/index#/"target="NO_BLANK">2. LEAGUE OF LEGENDS</a>
+						<p class="text-p">
+							Los números de League of Legends los han explotado por completo. Según Riot Games, casi todos los días, alrededor de 8 millones de personas juegan League of Legends.
+							<br><br>
+                            Es totalmente loco, y probablemente debería verlo en la parte superior de esta lista simplemente en base a la consistencia, pero hemos definido la métrica como un pico competitivo para resistir la tentación…
+						</p>
+					</div>
+				</div>
+				<br><br><br>
+				<div class="flex-position animation">
+					<div class="flex-item text-flex">
+						<a class="subtitle" href="https://www.epicgames.com/fortnite/es-ES/home" target="NO_BLANK">1. Fortnite</a>
+						<p class="text-p">
+                            Fortnite es una entidad en constante evolución, que se reforma con diferentes características y consejos a medida que surgen nuevas tendencias. Básicamente, es un juego nuevo cada mes gracias a su contenido de pase de batalla, y también se las arregló para encajar en la cultura pop al colaborar con músicos y figuras de celebridades para mantenerse relevante.
+                            <br><br>
+                            De hecho, fue durante el Concierto Astronómico de 2020 que Fortnite alcanzó un máximo de 12,3 millones de jugadores simultáneos, ya que los jugadores acudieron en masa para ver a Travis Scott debutar un nuevo sencillo.
+						</p>
+					</div>
+					<div class="flex-item img">
+						<img src="img/fort.png" class="img-top">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="phone">
+	    <Br><br><Br><br><br>
+    </div>
+	<div class="warn animation">
+		<h2 class="subtitle">Apartado Juegos</h2>
+		<p class="text-p">Ve al apartado de "Juegos" con la barra navegadora o haciendo click <a class="nav-link" href="juegos.html">Aquí</a></p>
+		<h2 class="subtitle">¿Qué hay en la pestaña "Juegos"?</h2>
+		<p class="text-p">Bien en la pestaña de juegos tendras varios videojuegos populares y podrás ver sus requisitos del sistema, reseñas etc.</p>
+	</div>
+	<div class="form-container animation">
+		<form class="form">
+			<h2 class="subtitle">SUGERENCIAS O QUEJAS...</h2>
+			<input type="text" name="" placeholder="Nombre de usuario" class="user-name" required="" />
+			<br>
+			<input type="password" name="" placeholder="Contraseña" class="password" required="" />
+			<br>
+			<input type="text" name="" placeholder="Escribe tu comentario o queja." class="comment">
+			<br>
+			<button id="btn-send">
+				Enviar
+			</button>
+		</form>
+	</div>
+<br><Br><br><br><br><Br><br><Br><br><br>
+<br><Br><br><Br><br>
+<div class="phone">
+	<br><Br><br><br><br><Br><br><Br><br><br><br><Br><br><Br><br><br>
+	<Br><br><br><br><Br><br><Br><br><br><br><br><br><br><br><br><br>
+	<br><br><br>
+</div>
+
+<script type="text/javascript" src="scriptjs/main.js"></script>
+<script type="text/javascript" src="scriptjs/menu.js"></script>
+</body>
+</html>

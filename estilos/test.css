@@ -1,0 +1,91 @@
+.container-juegos{
+	width: 82%;
+	box-shadow: 20px 20px #000;
+	height: 90vh;
+	background: #700B97;
+	margin: auto;
+	margin-top: 20px;
+	border-radius: 12px;
+}
+
+.center{
+	text-align: center;
+}
+
+.test-list{
+	height: 80%;
+}
+
+.ul-test{
+    margin-right: 25px;
+}
+
+
+.li-test{
+	margin: auto;
+	margin-top: 25px;
+	background: #700B97;
+	width: 100%;
+	display: inline-table;
+}
+
+.li-test:hover{
+	background: #3E065F;
+}
+
+.container-test{
+	width: 90%;
+	height: 110%;
+	background: #700B97;
+	margin: auto;
+	margin-top: 16px;
+}
+
+.img-test{
+	height: 300px;
+	width: 660px;
+}
+
+.flex{
+	display: flex;
+	justify-content: center;
+}
+
+.text-title{
+	font-size: 30px;
+}
+
+.question{
+	font-size: 25px;
+	color: #fff;
+}
+
+.answer{
+	color: #fff;
+	font-size: 24px;
+}
+
+.answer:hover{
+	background: #3E065F;
+	cursor: pointer;
+}
+
+input[type="radio" i]{
+	height: 22px;
+	cursor: pointer;
+}
+
+.form-answers{
+	margin: auto;
+	text-align: left;
+	width: 660px;
+}
+
+.aciertos{
+	width: 100%;
+	background: #3E065F;
+	outline: none;
+	border: none;
+	color: #fff;
+	font-size: 25px;
+}

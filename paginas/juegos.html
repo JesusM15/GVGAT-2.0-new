@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link rel="icon" href="../img/icono.png">
+	<link rel="stylesheet" type="text/css" href="../estilos/style.css">
+	<meta charset="utf-8">
+	<title>GVGAT-juegos</title>
+	<link rel="canonical" href="#" />
+	<meta name="keywords" content="paginas, web, proyectos, videojuegos, games, minecraft, fortnite, juegos, pc, computadora, telefonos, osu, valorant">
+	<meta name="description" content="Conoce todo acerca de videojuegos incluyendo sus requerimientos minimos y recomendados...">
+	<meta name="author" content="Jesus M">
+	<meta name="robots" content="index">
+	<meta name="viewport" content="width=viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
+    <script src="https://kit.fontawesome.com/62ea397d3a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<header>
+		<nav class="nav">
+			<ul class="nav-ul">
+				<div class="nav-li-container">
+					<li class="nav-li">
+						<a href="../index.html" class="nav-link">
+						<i class="fas fa-gamepad nav-icon"></i>
+						GVGAT  
+					    </a>
+				    </li>
+					<li class="nav-li">
+						<a href="juegos.html" class="nav-link">
+                        <i class="fas fa-heart nav-icon"></i>
+						Juegos
+					    </a>
+				    </li>
+				    <li class="nav-li">
+					    <a href="test.html" class="nav-link">
+                            <i class="fas fa-book nav-icon"></i>
+					        Test
+					    </a>
+				    </li>
+				    <li class="nav-li">
+				    	<button class="btn-music">
+				    		<i class="fas fa-play"></i>
+				    	</button>
+				    </li>
+				    	<script type="text/javascript">
+				    		const btnMusic = document.querySelector(".btn-music");
+
+				    		let playing = false;
+				    		var sonido = new Audio();
+
+				    		btnMusic.addEventListener("click", (er)=>{
+                                musicFunction();
+                            });
+
+                            const musicFunction = () =>{
+                            	if (playing == false){
+				    		        sonido.src = "../bgtheme.mp3";
+				    		        sonido.loop = true;
+				    		        sonido.play();
+				    		        playing = true;
+                            	}else{
+                            		sonido.src = "";
+                                    playing = false;
+                            	}
+                            }
+				    	</script>
+				</div>
+			</ul>
+			<ul class="nav-ul-responsive">
+			<div class="nav-button-responsive-container">
+				<button class="nav-responsive-button" id="menu">
+
+				 <i class="fas fa-bars"></i></button>
+			</div>
+			<div class="nav-li-responsive-container">
+				<li class="nav-li-responsive">
+					<a href="../index.html" class="nav-link">
+                    <i class="fas fa-gamepad nav-icon"></i>
+					GVGAT
+					</a>
+				</li>
+				<li class="nav-li-responsive">
+					<a href="juegos.html" class="nav-link">
+                    <i class="fas fa-heart nav-icon"></i>
+					Juegos
+					</a>
+				</li>
+				<li class="nav-li-responsive">
+					<a href="test.html" class="nav-link">
+                    <i class="fas fa-book nav-icon"></i>
+					Test
+					</a>
+				</li>
+				<li class="nav-li-responsive">
+				    <button class="btn-music">
+				    	<i class="fas fa-play"></i>
+				    </button>
+				</li>
+			</div>			
+ 			</ul>
+		</nav>
+	</header>
+<script type="text/javascript" src="../scriptjs/menu.js"></script>
+</body>
+</html>
